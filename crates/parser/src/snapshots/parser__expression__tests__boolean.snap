@@ -1,0 +1,6 @@
+---
+source: crates/parser/src/expression.rs
+expression: "expression (:: core :: stringify! (true))"
+snapshot_kind: text
+---
+Boolean(true)

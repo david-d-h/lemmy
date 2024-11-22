@@ -1,0 +1,6 @@
+---
+source: crates/parser/src/expression.rs
+expression: "expression (:: core :: stringify! (\"Hallo!\"))"
+snapshot_kind: text
+---
+String("Hallo!")

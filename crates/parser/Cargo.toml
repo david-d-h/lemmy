@@ -1,0 +1,18 @@
+[package]
+name = "parser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror.workspace = true
+ecow.workspace = true
+num-bigint.workspace = true
+readonly.workspace = true
+ast = { path = "../ast" }
+
+[dev-dependencies]
+insta = "1.41.1"
+
+[profile.dev.package]
+insta.opt-level = 3
+similar.opt-level = 3

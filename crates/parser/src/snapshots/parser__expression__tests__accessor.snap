@@ -1,0 +1,6 @@
+---
+source: crates/parser/src/expression.rs
+expression: "expression (:: core :: stringify! (person.name))"
+snapshot_kind: text
+---
+Binary(Identifier("person"), Dot, Identifier("name"))

@@ -1,0 +1,6 @@
+---
+source: crates/parser/src/expression.rs
+expression: "expression (:: core :: stringify! (real(1, 2, 3)))"
+snapshot_kind: text
+---
+Invocation { expr: Identifier("real"), arguments: [Int(1), Int(2), Int(3)] }

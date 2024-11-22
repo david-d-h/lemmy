@@ -1,0 +1,15 @@
+[package]
+name = "lemmy"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["crates/*"]
+
+[workspace.dependencies]
+thiserror = "2.0.3"
+ecow = "0.2.3"
+num-bigint = "0.4.6"
+readonly = "0.2.12"
+
+[dependencies]

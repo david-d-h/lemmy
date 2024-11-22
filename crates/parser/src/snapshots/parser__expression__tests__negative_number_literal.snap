@@ -1,0 +1,6 @@
+---
+source: crates/parser/src/expression.rs
+expression: "expression (:: core :: stringify! (-12))"
+snapshot_kind: text
+---
+Prefix(Minus, Int(12))

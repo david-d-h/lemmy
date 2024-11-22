@@ -1,0 +1,21 @@
+---
+source: crates/parser/src/expression.rs
+expression: "expression (:: core :: stringify! (fn(x) { x }))"
+snapshot_kind: text
+---
+Function {
+    arguments: [
+        Arg {
+            symbol: "x",
+        },
+    ],
+    body: Block(
+        [
+            Expression(
+                Identifier(
+                    "x",
+                ),
+            ),
+        ],
+    ),
+}

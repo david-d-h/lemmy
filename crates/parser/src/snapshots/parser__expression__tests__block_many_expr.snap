@@ -1,0 +1,51 @@
+---
+source: crates/parser/src/expression.rs
+expression: "expression\n(:: core :: stringify! ({ io.print(\"harharhar\") io.debug(3, 2, 1) }))"
+snapshot_kind: text
+---
+Block(
+    [
+        Expression(
+            Binary(
+                Identifier(
+                    "io",
+                ),
+                Dot,
+                Invocation {
+                    expr: Identifier(
+                        "print",
+                    ),
+                    arguments: [
+                        String(
+                            "harharhar",
+                        ),
+                    ],
+                },
+            ),
+        ),
+        Expression(
+            Binary(
+                Identifier(
+                    "io",
+                ),
+                Dot,
+                Invocation {
+                    expr: Identifier(
+                        "debug",
+                    ),
+                    arguments: [
+                        Int(
+                            3,
+                        ),
+                        Int(
+                            2,
+                        ),
+                        Int(
+                            1,
+                        ),
+                    ],
+                },
+            ),
+        ),
+    ],
+)

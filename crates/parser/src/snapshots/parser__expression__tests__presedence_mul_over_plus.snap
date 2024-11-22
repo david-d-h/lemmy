@@ -1,0 +1,6 @@
+---
+source: crates/parser/src/expression.rs
+expression: "expression (:: core :: stringify! (1 + 1 * 2))"
+snapshot_kind: text
+---
+Binary(Int(1), Plus, Binary(Int(1), Star, Int(2)))

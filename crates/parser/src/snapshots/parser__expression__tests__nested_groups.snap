@@ -1,0 +1,14 @@
+---
+source: crates/parser/src/expression.rs
+expression: "expression (:: core :: stringify! ((((a)))))"
+snapshot_kind: text
+---
+Group(
+    Group(
+        Group(
+            Identifier(
+                "a",
+            ),
+        ),
+    ),
+)
